@@ -19,6 +19,6 @@ public class GameController {
     @GetMapping
     public List<GameMinDTO> findAll(){
         List<GameMinDTO> result = service.findAll();
-        return resulta;
+        return result;
     }
 }
