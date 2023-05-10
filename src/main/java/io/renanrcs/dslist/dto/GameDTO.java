@@ -4,23 +4,23 @@ import io.renanrcs.dslist.entities.Game;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.BeanUtils;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GameMinDTO {
-
+public class GameDTO {
     private Long id;
     private String title;
     private Integer year;
+    private String genre;
+    private String platforms;
+    private Double score;
     private String imgUrl;
     private String shortDescription;
+    private String longDescription;
 
-    public GameMinDTO(Game dto) {
-        id = dto.getId();
-        title = dto.getTitle();
-        year = dto.getYear();
-        imgUrl = dto.getImgUrl();
-        shortDescription = dto.getShortDescription();
+    public GameDTO(Game entity) {
+        BeanUtils.copyProperties(entity, this);
     }
 }
