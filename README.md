@@ -4,8 +4,6 @@
 
 # Sobre o projeto
 
-https://wmazoni-sds1.netlify.app
-
 Pequeno projeto de aprendizagem com o Mestre Nélio Alves (API Rest)
 
 DsList é uma API que foi criada durante uma semana, chamada de intensivão Java Spring, ministrado pelo Mestre Nelio Alves.
